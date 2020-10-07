@@ -16,4 +16,9 @@ public class HomeController {
     }
     //implementing role based permission
 
+    @RequestMapping("/admin")
+    public String admin(){
+        return "admin";
+    }
+
 }
