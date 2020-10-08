@@ -22,7 +22,7 @@ public class HomeController {
     }*/
     @RequestMapping("/secure")
     public String secure(){
-        return "admin";
+        return "secure";
     }
 
 }
