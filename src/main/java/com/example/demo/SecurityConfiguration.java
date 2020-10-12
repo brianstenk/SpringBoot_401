@@ -62,7 +62,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     //super.configure(http);
     http
             .authorizeRequests()
-            .antMatchers("/", "/h2-console/**")
+            .antMatchers("/","/css/**","/js/**", "/h2-console/**")
             .permitAll()
             .antMatchers("/admin")
             .access("hasAnyAuthority('ADMIN')")
